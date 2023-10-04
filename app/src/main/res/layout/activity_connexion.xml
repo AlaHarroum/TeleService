@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    tools:context=".ConnexionActivity"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/loginlog"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/passwordlog"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/input_field"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emaillog" />
+
+    <ImageView
+        android:id="@+id/logposte"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/poste" />
+
+    <Button
+        android:id="@+id/btnconnexion"
+        android:layout_width="189dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:autoLink="all"
+        android:text="Connexion"
+        android:textSize="16sp"
+        app:backgroundTint="@color/bleu_marin2"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordlog" />
+
+    <EditText
+        android:id="@+id/emaillog"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_field"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginlog" />
+
+    <TextView
+        android:id="@+id/oublier"
+        android:layout_width="273dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Mot de passe oublié ?"
+        android:textColor="@color/bleu_ciel"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnconnexion" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="246dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text=" Vous n'avez pas de compte ?"
+        android:textColor="@color/gray"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inscrire"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oublier"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/inscrire"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:onClick="inscrireclick"
+        android:text="S'inscrire"
+        android:textColor="@color/gold"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oublier"
+        app:layout_constraintVertical_bias="0.388" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".InscriptionActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/poste" />
+
+    <TextView
+        android:id="@+id/inscriptiontitle"
+        android:layout_width="160dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="Inscription"
+        android:textColor="@color/bleu_marin4"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/emailinscrire"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscriptiontitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Prénom"
+        android:inputType="textPersonName"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/emailinscrire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/nom"
+        app:layout_constraintTop_toBottomOf="@+id/inscriptiontitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/emailinscrire"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Adresse Email"
+        android:inputType="textEmailAddress"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscriptiontitle" />
+
+    <EditText
+        android:id="@+id/passwordinscrire"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailinscrire" />
+
+    <EditText
+        android:id="@+id/cininscrire"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Carte d'identité"
+        android:inputType="number"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordinscrire" />
+
+    <EditText
+        android:id="@+id/phoneinscrire"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Téléphone"
+        android:inputType="phone"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cininscrire" />
+
+    <Button
+        android:id="@+id/btninscrire"
+        android:layout_width="189dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="500dp"
+        android:text="S'inscrire"
+        android:textSize="16sp"
+        app:backgroundTint="@color/bleu_marin2"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscriptiontitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/datenaissance"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Date de naissance"
+        android:inputType="textPersonName"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toEndOf="@+id/phoneinscrire"
+        app:layout_constraintTop_toBottomOf="@+id/cininscrire" />
+
+    <RadioGroup
+        android:id="@+id/genre"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="416dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btninscrire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inscriptiontitle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/btnhomme"
+            android:layout_width="116dp"
+            android:layout_height="60dp"
+            android:onClick="genreclick"
+            android:text="Homme"
+            android:textSize="18sp"
+            android:theme="@style/radiobtncolor" />
+
+        <RadioButton
+            android:id="@+id/btnfemme"
+            android:layout_width="116dp"
+            android:layout_height="60dp"
+            android:onClick="genreclick"
+            android:text="Femme"
+            android:textSize="18sp"
+            android:theme="@style/radiobtncolor" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

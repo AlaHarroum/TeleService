@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Télé-Service</string>
+    <string name="my_text"><u>• Choisir le Type de Service •</u></string>
+    <string name="underline"><u>Horaires de Travail</u></string>
+    <string name="midi"><u>Midi</u></string>
+    <string name="matin"><u>Matin</u></string>
+    <string-array name="Nature_Mondat">
+        <item>Mondat National</item>
+        <item>Mondat Internationnal</item>
+        <item>Mondat Organisme</item>
+        <item>Compte Poste</item>
+    </string-array>
+
+    <string-array name="Type_National">
+        <item>Mondat Minute</item>
+        <item>Mondat Ordinaire</item>
+    </string-array>
+
+
+    <string-array name="Type_Internationnal">
+        <item>Westren Union</item>
+        <item>Post Transfert</item>
+        <item>Euro guo</item>
+    </string-array>
+
+
+    <string-array name="Type_Organisme">
+        <item>Mondat Bourse</item>
+        <item>Mondat CNSS-CNRPS-CNAM</item>
+        <item>Autre Mondat...</item>
+    </string-array>
+
+    <string-array name="Type_Expedition">
+        <item>Mondat Ordinaiare</item>
+        <item>Mondat Minute</item>
+        <item>Recharger Compte</item>
+    </string-array>
+</resources>

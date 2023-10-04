@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".OublierMotDePasse">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poste" />
+
+    <EditText
+        android:id="@+id/oublieremail"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/input_field"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnenvoyer"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="ENVOYER"
+        android:textSize="16sp"
+        app:backgroundTint="@color/bleu_marin2"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oublieremail" />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/input_field"
+        android:drawableStart="@drawable/custom_code_icon"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Code"
+        android:inputType="textPersonName"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnenvoyer" />
+
+    <Button
+        android:id="@+id/btnvérifier"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="Vérifier"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/bleu_marin2"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+</androidx.constraintlayout.widget.ConstraintLayout>

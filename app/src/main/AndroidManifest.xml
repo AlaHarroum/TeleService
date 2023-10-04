@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mypfe">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeMyPFE"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".CodeFormulaire"></activity>
+        <activity android:name=".Expedition" />
+        <activity android:name=".Retrait" />
+        <activity android:name=".HeuresTravail" />
+        <activity android:name=".TypeService" />
+        <activity android:name=".reinitialisation" />
+        <activity android:name=".OublierMotDePasse" />
+        <activity android:name=".ProfilActivity" />
+        <activity android:name=".FirstStep" />
+        <activity android:name=".splash" />
+        <activity
+            android:name=".InscriptionActivity"
+            android:theme="@style/ThemeMyPFE.NoActionBar" />
+        <activity
+            android:name=".ConnexionActivity"
+            android:theme="@style/ThemeMyPFE.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
